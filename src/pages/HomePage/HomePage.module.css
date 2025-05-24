@@ -1,0 +1,71 @@
+.siteMain { flex-grow: 1; display: flex; align-items: center; }
+.heroSection { padding: 2rem 0; width: 100%; }
+.heroImageDesktopWrapper { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.heroImageDesktop { width: 100%; max-width: 450px; height: auto; border-radius: var(--border-radius-xl); box-shadow: 0 10px 25px rgba(0,0,0,0.08); display: block; }
+.heroImageMobile { display: none; }
+
+.heroFormColumn { position: relative;  }
+.heroFormColumn .tag { display: inline-block;background: var(--secondary-color); background: linear-gradient(90deg,rgba(0, 244, 226, 1) 0%, rgba(0, 255, 127, 1) 60%); color: var(--primary-color); font-weight: 600; padding: 0.4rem 0.8rem; border-radius: var(--border-radius-sm); font-size: 0.8rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.heroFormColumn h1 { font-size: 2.8rem; font-weight: 700; color: var(--text-color-dark); margin-bottom: 0.75rem; line-height: 1.2; }
+.heroFormColumn .subheadline { font-size: 1rem; color: var(--text-color-medium); margin-bottom: 2rem; max-width: 450px; }
+
+@media (max-width: 991px) { 
+    .heroSection .row { flex-direction: column; text-align: center; }
+    .heroImageDesktopWrapper { order: -1; margin-bottom: 2rem; } 
+    .heroFormColumn { text-align: center; }
+    .heroFormColumn .subheadline { margin-left: auto; margin-right: auto; }
+    .quoteForm .btn-primary { margin-left: auto; margin-right: auto; }
+}
+
+@media (max-width: 767px) { 
+    html { font-size: 15px; }
+    .container { padding-right: 20px; padding-left: 20px; }
+    .siteHeader .logo { height: 26px; }
+    .desktopOnlyText { display: none; }
+    .contactInfo { gap: 0.5rem; font-size: 0.85rem; }
+    .phoneIcon { width: 14px; height: 14px; }
+
+    .heroSection { padding-top: 1rem; padding-bottom: 1rem; }
+    .heroSection .row { text-align: left; } 
+    .heroImageDesktopWrapper { display: none; } 
+    .heroImageMobile { 
+        display: block;
+        position: absolute;
+        top: 5px; 
+        right: 0px; 
+        width: 100px; 
+        height: auto;
+        max-height: 110px;
+        object-fit: cover;
+        border-radius: var(--border-radius-lg);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 0; 
+    }
+    .heroFormColumn .tag { font-size: 0.75rem; padding: 0.3rem 0.6rem; margin-bottom: 0.5rem; }
+    .heroFormColumn h1 {
+        font-size: 2.1rem;
+        margin-bottom: 0.5rem;
+        padding-right: 105px; 
+        position: relative; z-index: 1;
+    }
+    .heroFormColumn .subheadline { font-size: 0.9rem; margin-bottom: 1.5rem; max-width: 100%; }
+    .quoteForm input[type="text"], .quote-form input[type="tel"], .quote-form select {
+        padding: 0.8rem 0.9rem; font-size: 0.9rem;
+    }
+    .quoteForm .checkboxGroup label { font-size: 0.85rem; }
+    .quoteForm .termsLink { font-size: 0.8rem; margin-bottom: 1.25rem; text-align: left; }
+    .btn-primary { max-width: none; font-size: 0.95rem; padding: 0.85rem 1.5rem; }
+}
+
+@media (max-width: 420px) { 
+    .heroFormColumn h1 { font-size: 1.5rem; padding-right: 90px;text-align: left;  }
+    .heroFormColumn p { text-align: left;  }
+    .heroImageMobile { width: 80px; max-height: 90px; top: 0;right: 15px; }
+    .quoteForm .formGroupInline { flex-direction: column; } 
+    .quoteForm .selectGroup { flex-basis: 100%; margin-bottom: 1rem; }
+    .quoteForm .document-number-group { flex-basis: 100%; }
+}

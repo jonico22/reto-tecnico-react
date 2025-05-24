@@ -1,0 +1,10 @@
+.siteHeader { padding: 1.5rem 0; background-color: transparent; }
+.siteHeader .logo { height: 36px; display: block; }
+.contactInfo { display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; font-size: 0.9rem; color: var(--text-color-dark); }
+.contactInfo .phoneNumber { font-weight: 600; color: var(--text-color-dark); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
+.phoneIcon { display: inline-block; }
+.desktopOnlyText { color: var(--text-color-medium); }
+
+@media (max-width: 767px) { 
+    .desktopOnlyText { display: none; }
+}

@@ -1,0 +1,72 @@
+.sliderContainer {
+  width: 100%;
+  overflow: hidden; 
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.mySwiper {
+  padding-left: var(--gutter-width, 15px); 
+  margin-left: calc(-1 * var(--gutter-width, 15px));
+  margin-right: calc(-1 * var(--gutter-width, 15px));
+}
+
+.swiperSlide {
+  height: auto; 
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+.swiperSlide > div {
+  width: 100%;
+}
+
+.navigationControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem; 
+}
+
+.navButton {
+  background-color: transparent;
+  border: 1px solid #d1d8e8;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--primary-color, #0f172a);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.navButton:hover {
+  background-color: #e8eefc;
+  border-color: var(--primary-color, #0f172a);
+}
+
+.swiperButtonDisabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #e0e7ff;
+}
+.swiperButtonDisabled:hover {
+    background-color: transparent;
+    border-color: #e0e7ff;
+}
+
+.customPagination {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color-medium, #4b5563);
+  min-width: 40px;
+  text-align: center;
+}
+
+:global(.swiper-pagination-bullet) {
+  display: none !important; 
+}

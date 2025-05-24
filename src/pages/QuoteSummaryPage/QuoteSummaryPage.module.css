@@ -1,0 +1,142 @@
+.summaryPageWrapper {
+  flex-grow: 1;
+  background-color: white;
+}
+
+.contentArea {
+  padding: 1rem var(--gutter-width, 15px) 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.desktopBackButton {
+  display: none; 
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background: none;
+  border: none;
+  color: var(--fifth-color);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+}
+.desktopBackButton:hover {
+  text-decoration: underline;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color-dark, #1e293b);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.summaryCard {
+  background-color: #F9FAFF;
+  border-radius: var(--border-radius-lg, 16px);
+  padding: 1.25rem; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); 
+  text-align: left;
+}
+
+.cardSection {
+  margin-bottom: 1rem;
+}
+.cardSection:last-child {
+  margin-bottom: 0;
+}
+
+.sectionLabel {
+  font-size: 0.65rem; 
+  color: var(--text-color-muted, #9ca3af);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.personInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.personIcon {
+  width: 24px; 
+  height: 24px;
+  fill: var(--text-color-dark, #374151);
+}
+
+.personName {
+  font-size: 1rem; 
+  font-weight: 600;
+  color: var(--text-color-dark, #1e293b);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #E0E7FF;
+  margin: 1rem 0;
+}
+
+.sectionTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-color-dark, #1e293b);
+  margin-bottom: 0.4rem;
+}
+
+.detailItem {
+  font-size: 0.85rem;
+  color: var(--text-color-medium, #4b5563);
+  margin-bottom: 0.15rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .contentArea {
+    padding: 2rem var(--gutter-width, 15px) 3rem;
+  }
+
+  .desktopBackButton {
+      display: inline-flex;
+      margin-bottom: 1.5rem;
+  }
+
+  .mainTitle {
+    font-size: 2.2rem; 
+    margin-bottom: 2.5rem;
+  }
+
+  .summaryCard {
+    padding: 2rem; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .sectionLabel {
+    font-size: 0.7rem;
+  }
+
+  .personIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .personName {
+    font-size: 1.25rem;
+  }
+
+  .divider {
+      margin: 1.25rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 1rem; 
+  }
+  .detailItem {
+    font-size: 1rem;
+  }
+}

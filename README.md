@@ -20,4 +20,7 @@ npm run test:coverage
 npm run lint
 npm run format
 ```
+## 🧪 Crear un archivo .env con lo siguiente parametro
 
+VITE_URL_API_USER = ''
+VITE_URL_API_PLANS = ''

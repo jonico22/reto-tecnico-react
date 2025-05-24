@@ -1,0 +1,12 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, var(--gradient-left) 0%, var(--background-page) 25%, var(--background-page) 75%, var(--gradient-right) 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.siteMain {
+  display: flex; 
+  height: auto;
+}

@@ -1,0 +1,178 @@
+.plansPageWrapper {
+  flex-grow: 1;
+  background-color: white;
+}
+
+.contentArea {
+  padding: 1.5rem var(--gutter-width, 15px) 3rem; 
+  text-align: center;
+}
+
+.backButton {
+  display: inline-flex; 
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  align-self: flex-start; 
+  float: left; 
+  border: none;
+  background-color: transparent;
+  color: var(--fifth-color);
+  font-weight: 600;
+  padding: 0.5rem 0; 
+}
+.backButton:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+.backIcon {
+    width: 18px;
+    height: 18px;
+}
+
+.icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+}
+.desktopBackButton {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--primary-color, #0f172a);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0.25rem 0; 
+    float: left; 
+}
+.desktopBackButton:hover {
+    text-decoration: underline;
+}
+
+.mainTitle {
+  font-size: 1.75rem; 
+  font-weight: 700;
+  color: var(--text-color-dark, #1e293b);
+  margin-bottom: 0.5rem;
+  clear: both; 
+}
+
+.subtitle {
+  font-size: 0.9rem; 
+  color: var(--text-color-medium, #64748b);
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem; 
+  max-width: 500px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.cardsContainerMobile {
+  max-width: 100%; 
+}
+.cardIcon { 
+  width: 36px; 
+  height: 36px;
+}
+
+.continueButton {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contentArea {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .desktopBackButton {
+      display: inline-block; 
+  }
+
+  .mainTitle {
+    font-size: 2.2rem; 
+  }
+  .subtitle {
+    font-size: 1rem;
+    max-width: 450px;
+    margin-bottom: 2.5rem;
+  }
+
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+    max-width: 700px;
+  }
+
+  .cardIcon {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+.plansDisplaySection {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eef2f9; 
+  width: 100%;
+}
+
+.plansTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color-dark, #1e293b);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.planCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.loadingMessage,
+.errorMessageApi { 
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--text-color-medium);
+}
+.errorMessageApi {
+  color: red; 
+  background-color: #ffebee;
+  border: 1px solid #ef9a9a;
+  border-radius: var(--border-radius-md);
+}
+
+@media (min-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+  }
+
+  .plansTitle {
+    font-size: 1.75rem;
+    text-align: left; 
+    margin-bottom: 1.5rem;
+  }
+
+  .planCardsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  }
+}

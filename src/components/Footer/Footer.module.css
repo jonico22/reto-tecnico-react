@@ -1,0 +1,13 @@
+.siteFooter { background-color: var(--primary-color); color: var(--text-color-light); padding: 1rem 0; margin-top: auto; }
+.siteFooter .logo { height: 41px; display: block; filter: brightness(0) invert(1); }
+.siteFooter .copyright { font-size: 0.85rem; color: #9ca3af; }
+.footerCopyrightWrapper { position: relative; }
+
+@media (max-width: 767px) { 
+    .siteFooter { padding: 1.5rem 0; }
+    .siteFooter .row { flex-direction: column; align-items: center; text-align: center; }
+    .footerLogoWrapper { margin-bottom: 0.75rem; }
+    .siteFooter .logo { height: auto ; margin: 0 auto; }
+    .siteFooter .copyright { font-size: 0.8rem; }
+    .footerCopyrightWrapper { text-align: center !important;padding-top: 1em; }
+}

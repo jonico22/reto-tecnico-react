@@ -1,0 +1,61 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 1.5rem 0;
+  background-color: #f8f9ff;
+  border-bottom: 1px solid #e0e0ff;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  color: var(--text-color-medium, #6c757d);
+  font-size: 0.9rem;
+}
+
+.stepNumber {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e0e5f0;
+  color: var(--text-color-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  border: 2px solid #e0e5f0;
+}
+
+.stepLabel {
+  opacity: 0.5;
+}
+
+.step.active .stepNumber {
+  background-color: var(--fifth-color, );
+  color: white;
+  border-color: var(--fifth-color);
+}
+.step.active .stepLabel {
+  color: var(--primary-color, #0f172a);
+  opacity: 1;
+}
+
+.step.completed .stepNumber {
+  background-color: #d1d5db; 
+  border-color: #d1d5db;
+  color: #6b7280;
+}
+.step.completed .stepLabel {
+   opacity: 0.6;
+}
+
+
+.connector {
+  height: 2px;
+  width: 30px; 
+  background-image: radial-gradient(circle, #c0c8d8 1px, transparent 1.5px);
+  background-size: 8px 2px;
+  margin: 0 0.75rem;
+}
